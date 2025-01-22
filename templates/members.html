@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Members of Parliament</title>
-  </head>
-
-  <body>
-    <h1>Members of Parliament</h1>
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{% block title %}Members of Parliament{% endblock %}</h1>
     <table>
       <tr>
           <th>First Name</th>
@@ -26,5 +19,4 @@
       </tr>
       {% endfor %}
   </table>
-  </body>
-</html>
+{% endblock %}
